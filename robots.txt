@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://colonel94.github.io/calculator-world/sitemap.xml
