@@ -1,0 +1,2 @@
+function setupCalculator(fn){const f=document.querySelector('form');if(!f)return;f.addEventListener('submit',e=>{e.preventDefault();const out=document.getElementById('result');try{const r=fn(new FormData(f));out.innerHTML=r}catch(x){out.textContent='Please check your inputs.'}})}
+function n(f,k){return Number(f.get(k))}function money(x){return new Intl.NumberFormat('en',{maximumFractionDigits:2}).format(x)}
