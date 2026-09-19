@@ -1,0 +1,1 @@
+export const config = {"origin":"https://colonel94.github.io","base":"/calculator-world/","verification":"yo9oPmAmgcgfBp-yHfvtZSq9K5iCnQqAUoB6W-CkM_Y","analytics":{"measurementId":"","enabled":false},"advertising":{"publisherId":"","enabled":false,"slots":{"afterResult":"","afterExplanation":""}}};
