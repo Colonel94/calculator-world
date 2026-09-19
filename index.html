@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Calculator World — Free Everyday Calculators</title>
+<meta name="description" content="Free, fast calculators for money, business, health, dates, construction, cars and everyday life.">
+<link rel="canonical" href="https://colonel94.github.io/calculator-world/">
+<style>
+:root{--bg:#f7f8fc;--card:#fff;--text:#172033;--muted:#667085;--line:#e5e7eb;--accent:#3157d5}*{box-sizing:border-box}body{margin:0;font:16px/1.55 system-ui,-apple-system,Segoe UI,sans-serif;color:var(--text);background:var(--bg)}header,main,footer{max-width:1100px;margin:auto;padding:22px}nav{display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-weight:800;font-size:1.25rem;color:var(--text);text-decoration:none}.links a{margin-left:14px;color:var(--muted);text-decoration:none}.hero{padding:60px 0 32px}.hero h1{font-size:clamp(2rem,6vw,4rem);line-height:1.05;margin:0 0 16px}.hero p{max-width:700px;color:var(--muted);font-size:1.1rem}.search{width:100%;max-width:650px;padding:15px 18px;border:1px solid var(--line);border-radius:12px;font-size:16px;background:white}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:25px 0 50px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px}.card h2{font-size:1.05rem;margin:0 0 7px}.card p{font-size:.92rem;color:var(--muted);margin:0 0 14px}.card a{color:var(--accent);font-weight:700;text-decoration:none}.section-title{margin-top:35px}footer{border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}.ad-slot{border:1px dashed #cbd5e1;padding:16px;text-align:center;color:var(--muted);border-radius:12px;margin:20px 0} @media(max-width:600px){.links{display:none}.hero{padding-top:35px}}</style>
+</head>
+<body>
+<header><nav><a class="brand" href="./">Calculator World</a><div class="links"><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></div></nav></header>
+<main>
+<section class="hero"><h1>Calculate anything.<br>Without the clutter.</h1><p>Simple, free calculators for everyday decisions. No account required.</p><input id="search" class="search" type="search" placeholder="Search calculators…" aria-label="Search calculators"></section>
+<div class="ad-slot">Advertising space — reserved for AdSense after approval</div>
+<h2 class="section-title">Popular calculators</h2>
+<section class="grid" id="grid">
+<article class="card" data-name="percentage"><h2>Percentage Calculator</h2><p>Percentages, increases, decreases and percentage differences.</p><a href="percentage-calculator.html">Calculate →</a></article>
+<article class="card" data-name="loan monthly payment interest"><h2>Loan Calculator</h2><p>Estimate monthly payments and total interest.</p><a href="loan-calculator.html">Calculate →</a></article>
+<article class="card" data-name="compound interest savings investment"><h2>Compound Interest</h2><p>Project savings and investment growth over time.</p><a href="compound-interest-calculator.html">Calculate →</a></article>
+<article class="card" data-name="profit margin business"><h2>Profit Margin</h2><p>Calculate profit, margin and markup.</p><a href="profit-margin-calculator.html">Calculate →</a></article>
+<article class="card" data-name="bmi body mass index"><h2>BMI Calculator</h2><p>Calculate body mass index from height and weight.</p><a href="bmi-calculator.html">Calculate →</a></article>
+<article class="card" data-name="age birthday date"><h2>Age Calculator</h2><p>Calculate age from a date of birth.</p><a href="age-calculator.html">Calculate →</a></article>
+<article class="card" data-name="fuel trip car cost mileage"><h2>Fuel Cost Calculator</h2><p>Estimate fuel needed and trip cost.</p><a href="fuel-cost-calculator.html">Calculate →</a></article>
+<article class="card" data-name="concrete construction volume"><h2>Concrete Calculator</h2><p>Estimate concrete volume for slabs and projects.</p><a href="concrete-calculator.html">Calculate →</a></article>
+<article class="card" data-name="tile flooring room"><h2>Tile Calculator</h2><p>Estimate tiles required including waste allowance.</p><a href="tile-calculator.html">Calculate →</a></article>
+<article class="card" data-name="days between dates"><h2>Days Between Dates</h2><p>Count calendar days between two dates.</p><a href="days-between-dates.html">Calculate →</a></article>
+</section>
+<section><h2>Useful answers, not just numbers</h2><p>Each Calculator World tool is designed to explain its inputs, calculation and result. Calculations are informational estimates and should not replace professional financial, medical, legal or engineering advice where applicable.</p></section>
+</main>
+<footer>© <span id="year"></span> Calculator World · Free calculators for everyday life.</footer>
+<script>const q=document.getElementById('search'),cards=[...document.querySelectorAll('.card')];q.addEventListener('input',()=>{const s=q.value.toLowerCase();cards.forEach(c=>c.style.display=c.innerText.toLowerCase().includes(s)||c.dataset.name.includes(s)?'block':'none')});document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body></html>
